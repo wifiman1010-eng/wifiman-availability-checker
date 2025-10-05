@@ -28,5 +28,5 @@ app.post("/check", (req, res) => {
 
 // ✅ Correct listen line
 app.listen(PORT, () => {
-  console.log(WiFiman Checker running on port ${PORT});
+  console.log(`WiFiman Checker running on port ${PORT});
 });
