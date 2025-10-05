@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: wifiman-checker
+    rootDir: backend
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: MOCK
+        value: "1"
+      - key: ALLOW_ORIGIN
+        value: "*"
+      - key: PORT
+        value: "8787"
+      - key: CACHE_TTL_MINUTES
+        value: "1440"
