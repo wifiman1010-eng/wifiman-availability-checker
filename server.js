@@ -57,6 +57,10 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: "Internal error" });
 });
 
+app.get('/', (req, res) => {
+  res.send('✅ WiFiman Availability Checker API is running successfully.');
+});
+
 app.listen(PORT, () => {
   console.log('WiFiman Checker running on port ' + PORT);
 });
