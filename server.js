@@ -58,5 +58,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
-  console.log(WiFiman Checker running on port ${PORT});
+  console.log('WiFiman Checker running on port ' + PORT);
 });
